@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PGrid Demo</title>
+<meta name="description" content="Demo grid">
+<script src="./src/kfGrid.js"></script>
+</head>
+<body>
+<h1>kfGrid an easy js grid for html</h1>
+<p>This is a beta version of the library</p>
+<pre>
+// Example of using on js script
+var row=2, col=8;
+myGrid = new kfGrid("container",row,col);
+var nb=-1;
+for(let i=0; i<row; i++){
+for(let j=0;j<col;j++){
+nb++;
+console.log(nb);
+myGrid.addImage(nb,"carte.png", "Je suis la carte "+nb) ;
+
+}
+}
+</pre>
+<p>You can also <a href="./doc/index.html">read the doc</a></p>
+<!-- Content -->
+<div id="container" style="background-color:#259925;">
+</div>
+
+
+<script>
+// Example of using
+var row=3, col=8;
+myGrid = new kfGrid("container",row,col);
+var nb=-1;
+for(let i=0; i<row; i++){
+for(let j=0;j<col;j++){
+nb++;
+console.log(nb);
+myGrid.addImage(nb,"carte.png", "Je suis la carte "+nb) ;
+
+}
+}
+
+</script>
+</body>
+</html>
