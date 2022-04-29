@@ -4,6 +4,7 @@ class kfGrid{
 	* 
 	*/
 	constructor(idContainer, nbRows, nbCols, size=50){
+		this.containerName = idContainer;
 		this.container = document.getElementById(idContainer);
 		this.rows = nbRows;
 		this.cols = nbCols;
@@ -34,7 +35,7 @@ class kfGrid{
   --grid-rows: 1;
 }
 
-#container {
+#${this.containerName} {
   display: grid;
  /* grid-gap: 1em;*/
   grid-template-rows: repeat(var(--grid-rows), 1fr);
